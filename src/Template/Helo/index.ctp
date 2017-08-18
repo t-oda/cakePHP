@@ -6,13 +6,14 @@
         'type' => 'post',
         'url' =>['Controller' => 'Helo', 'action' => 'index']])
     ?>
-
+    <!--日時の選択-->
     <?=$this->Form->date('date',[
         'year'=>['style'=>'width:100px'],
         'month'=>['style'=>'width:100px'],
         'day'=>['style'=>'width:100px']
     ])?>
     <hr>
+    <!--時間の選択-->
     <?=$this->Form->time('time',[
         'interval'=>'5',
         'hour'=>['style'=>'width:70px']
