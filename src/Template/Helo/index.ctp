@@ -6,9 +6,10 @@
         'type' => 'post',
         'url' =>['Controller' => 'Helo', 'action' => 'index']])
     ?>
-    <!--日時の選択-->
+    <!--日時の選択,年の最小値はminYearで制御する-->
     <?=$this->Form->date('date',[
         'year'=>['style'=>'width:100px'],
+        'minYear' => date('Y') - 40,
         'month'=>['style'=>'width:100px'],
         'day'=>['style'=>'width:100px']
     ])?>
